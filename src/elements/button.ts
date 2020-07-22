@@ -29,3 +29,10 @@ export class MyButton extends LitElement {
     this.count++;
   }
 }
+
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'my-button': MyButton;
+  }
+}
